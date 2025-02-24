@@ -63,11 +63,11 @@ _A futuristic decentralized application for staking ERC-20 tokens with flexible 
 
 ```mermaid
 flowchart TD
-    A[User Interface<br/>(React/Next.js)] --> B[Wallet Connection<br/>(RainbowKit)]
-    B --> C[Smart Contract Interaction<br/>(Ethers.js)]
-    C --> D[Smart Contracts<br/>(Solidity/Hardhat)]
-    D --> E[Staking Logic & Reward Calculation]
-    E --> F[Blockchain Network<br/>(Local/Live)]
+    A["User Interface\nReact/Next.js"] --> B["Wallet Connection\nRainbowKit"]
+    B --> C["Smart Contract Interaction\nEthers.js"]
+    C --> D["Smart Contracts\nSolidity/Hardhat"]
+    D --> E["Staking Logic &\nReward Calculation"]
+    E --> F["Blockchain Network\nLocal/Live"]
 ```
 
 ---
