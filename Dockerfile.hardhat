@@ -1,0 +1,31 @@
+FROM node:18-alpine
+
+WORKDIR /app
+
+# Copy package files
+COPY package*.json ./
+
+# Install dependencies with legacy peer deps
+RUN npm install --legacy-peer-deps
+
+# Copy Hardhat configuration and contracts
+COPY hardhat.config.ts ./
+COPY contracts ./contracts
+COPY scripts ./scripts
+COPY test ./test
+
+# Copy entrypoint script
+COPY docker/hardhat-entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+# Create volume for shared data
+VOLUME /app/shared
+
+# Expose the port Hardhat runs on
+EXPOSE 8545
+
+# Set environment variables
+ENV AUTO_DEPLOY=true
+
+# Set entrypoint
+ENTRYPOINT ["/entrypoint.sh"] 

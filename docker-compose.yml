@@ -1,0 +1,34 @@
+services:
+  # Frontend application
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - shared-data:/app/shared
+    depends_on:
+      - hardhat
+    restart: unless-stopped
+
+  # Local Ethereum network (Hardhat)
+  hardhat:
+    build:
+      context: .
+      dockerfile: Dockerfile.hardhat
+    ports:
+      - "8545:8545"
+    environment:
+      - HARDHAT_NETWORK=localhost
+      - AUTO_DEPLOY=true
+    volumes:
+      - ./contracts:/app/contracts
+      - ./scripts:/app/scripts
+      - ./test:/app/test
+      - shared-data:/app/shared
+
+volumes:
+  shared-data: 
