@@ -29,6 +29,8 @@ _A futuristic decentralized application for staking ERC-20 tokens with flexible 
 
 **Token Staking DApp** is a next-generation decentralized application that empowers users to stake ERC-20 tokens with flexible lock-up periods and earn rewards based on the duration and amount staked. Featuring a sleek, responsive UI and bulletproof smart contracts, this project is built for the visionary era of 2025. 😎✨
 
+![Token Staking DApp Screenshot](./token-dapp.png)
+
 ---
 
 ## 🌟 Features
