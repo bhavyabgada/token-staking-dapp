@@ -1,4 +1,4 @@
-# 🚀 Token Staking DApp - 2040 Edition
+# 🚀 Token Staking DApp - 2025 Edition
 
 [![Version](https://img.shields.io/badge/version-2.0-blue.svg)](https://github.com/bhavyabgada/token-staking-dapp)  
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](./LICENSE)  
@@ -27,7 +27,7 @@ _A futuristic decentralized application for staking ERC-20 tokens with flexible 
 
 ## 🔍 Overview
 
-**Token Staking DApp** is a next-generation decentralized application that empowers users to stake ERC-20 tokens with flexible lock-up periods and earn rewards based on the duration and amount staked. Featuring a sleek, responsive UI and bulletproof smart contracts, this project is built for the visionary era of 2040. 😎✨
+**Token Staking DApp** is a next-generation decentralized application that empowers users to stake ERC-20 tokens with flexible lock-up periods and earn rewards based on the duration and amount staked. Featuring a sleek, responsive UI and bulletproof smart contracts, this project is built for the visionary era of 2025. 😎✨
 
 ---
 
@@ -207,4 +207,4 @@ This project is licensed under the [MIT License](./LICENSE).
 
 ---
 
-© 2040 **Token Staking DApp** • Crafted with innovation, passion, and a futuristic vision. 😎🚀
+© 2025 **Token Staking DApp** • Crafted with innovation, passion, and a futuristic vision. 😎🚀
